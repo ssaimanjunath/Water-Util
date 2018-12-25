@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Water Util</string>
+    <string name="login">Verify your phone number</string>
+    <string name="desc">You\'ll receive a text message with your verification code.</string>
+    <string name="enter_mob">Enter Mobile Number</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="tour">Tour around the app</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
