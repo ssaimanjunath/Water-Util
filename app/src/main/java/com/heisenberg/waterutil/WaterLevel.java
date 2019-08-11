@@ -98,13 +98,21 @@ public class WaterLevel extends Fragment implements SwipeRefreshLayout.OnRefresh
                 lvl += json_data.getString("dist");
             }
             wat_lvl = rootView.findViewById(R.id.water_level);
-            wat_lvl.setProgress(Integer.parseInt(lvl));
+            int w_lvl = Integer.parseInt(lvl);
+            if(w_lvl>=0 && w_lvl<=100)
+            {
+                wat_lvl.setProgress(w_lvl);
+            }
+            else
+            {
+                wat_lvl.setProgress(0);
+                Toast.makeText(rootView.getContext(),"Calibration problem!!",Toast.LENGTH_SHORT).show();
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
         swipeRefreshLayout.setRefreshing(false);
-
     }
 }
 
